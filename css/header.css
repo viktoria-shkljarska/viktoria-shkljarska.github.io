@@ -1,0 +1,79 @@
+header {
+    background-color: #222;
+    color: #fff;
+    height: 100vh;
+    position: relative;
+}
+
+header .container {
+	padding:25px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	padding-bottom: 12vh;
+}
+
+.item {
+	max-width: 50%;
+	margin-bottom: 50px;
+}
+
+.item a {
+	display:block;
+	width: 100%;
+	transition: all .3s ease;
+}
+
+.item a:hover {
+	transform: scale(1.1);
+}
+
+.item img {
+	display:block;
+	max-width:100%;
+	max-height: 35vh;
+	width:auto;
+	margin:auto;
+}
+
+.item:nth-of-type(odd) {
+	padding-right: 25px;
+}
+
+.item:nth-of-type(even) {
+	padding-left: 25px;
+}
+
+.fadebox {
+	animation-name: fadebox;
+	animation-duration: .5s;
+	animation-delay: 3.5s;
+	animation-timing-function: ease-out;
+	animation-fill-mode: forwards;
+	opacity:0;
+}
+
+@keyframes fadebox {
+	0% {
+		opacity: 0;
+		transform: translateY(100%);
+	}
+	100%{
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+
+@media screen and (max-aspect-ratio:1/1) {
+
+	.container .item {
+		width: 100%;
+		padding:0;
+	}
+}
+
+
+

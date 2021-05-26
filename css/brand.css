@@ -1,0 +1,39 @@
+header {
+    background-color: #222;
+    color: #fff;
+    height: auto;
+    min-height: 0;
+    position: relative;
+}
+
+.logo {
+	/*position: relative;*/
+	/*margin-left: 30px;*/
+	margin-top: 30px;
+}
+
+.logo .letters {
+	position: relative;
+	opacity:1;
+	transition: opacity .3s ease-in-out;
+}
+
+.logo a {
+	color: #fff;
+	opacity:.7;
+	transition: all .3s ease;
+	letter-spacing: -.1em;
+}
+
+.logo a:hover {
+    color: #fff;
+    opacity:1;
+    letter-spacing: -.09em;
+}
+
+.letters {
+	font-size: 1.5rem;
+	font-weight: 400;
+	text-align: center;
+	line-height:100%;
+}
